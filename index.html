@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 6–8 Tuition</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9fb; color: #333; }
+    header { background: #4f46e5; color: white; padding: 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 1.8rem; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    h2 { color: #4f46e5; }
+    .subjects { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .card { flex: 1; min-width: 250px; background: white; border: 1px solid #ddd; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .pricing { text-align: center; background: #eef2ff; border-radius: 10px; padding: 2rem; margin-top: 1rem; }
+    .pricing h3 { margin-top: 0; }
+    .btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: #4f46e5; color: white; border-radius: 8px; text-decoration: none; }
+    footer { background: #f3f4f6; text-align: center; padding: 1rem; font-size: 0.9rem; margin-top: 2rem; }
+    .comment-box { margin-top: 2rem; padding: 1rem; background: #fff; border: 1px solid #ddd; border-radius: 10px; }
+    .comment-box textarea { width: 100%; height: 100px; padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; }
+    .comment-box button { margin-top: 0.5rem; padding: 0.6rem 1.2rem; background: #4f46e5; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    .comment-list { margin-top: 1rem; }
+    .comment { background: #f9fafb; padding: 0.7rem; border-radius: 5px; margin-bottom: 0.5rem; border: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Class 6–8 Tuition Classes</h1>
+    <p>Maths • Science • Chemistry</p>
+  </header>  <section>
+    <h2>About the Classes</h2>
+    <p>We provide affordable online tuition for Class 6–8 students. Clear concepts, practice worksheets, and doubt-solving sessions are included.</p><div class="subjects">
+  <div class="card">
+    <h3>Mathematics</h3>
+    <p>Arithmetic, Algebra, Geometry, NCERT solutions, tricks & shortcuts.</p>
+  </div>
+  <div class="card">
+    <h3>Science</h3>
+    <p>Physics, Biology, Earth science with diagrams and explanations.</p>
+  </div>
+  <div class="card">
+    <h3>Chemistry</h3>
+    <p>Atoms, reactions, balancing equations, real-life applications.</p>
+  </div>
+</div>
+
+<div class="pricing">
+  <h3>Fees</h3>
+  <p><strong>₹200 per month</strong> per subject per student</p>
+  <p>3 live classes every week + worksheets + tests</p>
+  <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">Join on WhatsApp</a>
+</div>
+
+  </section>  <section>
+    <h2>Contact Us</h2>
+    <p>📧 Email: tuitionclass68@example.com</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Click here</a></p>
+  </section>  <section class="comment-box">
+    <h2>Leave a Comment</h2>
+    <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+    <button onclick="addComment()">Post Comment</button>
+    <div class="comment-list" id="commentList"></div>
+  </section>  <footer>
+    <p>© 2025 Tuition Classes • Safe learning for Class 6–8</p>
+  </footer>  <script>
+    function addComment() {
+      const commentInput = document.getElementById('commentInput');
+      const commentList = document.getElementById('commentList');
+      if (commentInput.value.trim() !== '') {
+        const newComment = document.createElement('div');
+        newComment.classList.add('comment');
+        newComment.innerText = commentInput.value;
+        commentList.appendChild(newComment);
+        commentInput.value = '';
+      } else {
+        alert('Please write something before posting!');
+      }
+    }
+  </script></body>
+</html>
